@@ -1,0 +1,35 @@
+.header {
+	background-color: $main-color;
+	padding: 10px 0;
+	position: relative;
+	&__list {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		a {
+			color: #f9ebd9;
+			font-family: "Bazar";
+			font-size: 25px;
+			text-transform: uppercase;
+			transition: all 0.3s ease-in-out;
+			&:hover {
+				display: inline-block;
+				color: #fff;
+				transform: scale(1.1);
+			}
+		}
+	}
+	&__logo {
+		width: 100px;
+		position: relative;
+	}
+	&__title {
+		color: #f6edd8;
+		position: absolute;
+		top: 15px;
+		left: 50%;
+		transform: translateX(-50%);
+		font-size: 55px;
+		font-family: "SEASRN__";
+	}
+}

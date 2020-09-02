@@ -1,0 +1,77 @@
+.skills {
+	padding: 50px 0;
+	background-color: #dbd8d5;
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	&__diagramms {
+		display: flex;
+		justify-content: space-around;
+	}
+	&__diagramm {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin: 25px 50px 0 50px;
+	}
+	&__percent {
+		position: absolute;
+		top: 60%;
+		left: 30%;
+		transform: translateY(-50%);
+		font-size: 45px;
+		font-family: "Roboto Slab";
+	}
+	&__title {
+		margin-bottom: 35px;
+		font-family: "Roboto Slab";
+		span {
+			cursor: pointer;
+			margin-left: 15px;
+		}
+	}
+	&__hint {
+		background-color: #fff;
+		border-radius: 50px;
+		font-size: 15px;
+		opacity: 0;
+		padding: 20px;
+		position: relative;
+		position: absolute;
+		top: -100px;
+		transition: all 0.3s ease-in-out;
+		right: -220px;
+		width: 300px;
+		&:after {
+			content: "";
+			position: absolute;
+			bottom: -20px;
+			left: 20px;
+			border: 1px solid transparent;
+			border-top: 1px solid #fff;
+		}
+		&::before {
+			content: "";
+			position: absolute;
+			bottom: -24px;
+			left: 20px;
+			border: 15px solid transparent;
+			border-top: 15px solid #fff;
+		}
+	}
+}
+
+circle {
+	fill: rgba(0,0,0,0);
+	stroke: #eee;
+	stroke-width: 15;
+	stroke-dasharray: 408px 408px;
+  }
+circle:nth-child(2n) {
+	fill: rgba(0,0,0,0);
+	stroke: #e08766;
+	stroke-width: 15;
+}

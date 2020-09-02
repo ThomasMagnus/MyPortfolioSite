@@ -1,0 +1,40 @@
+.portfolio {
+	padding: 50px 0;
+	background-color: #e18867;
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	&__works {
+		margin-top: 25px;
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		width: 1200px;
+	}
+	&__work {
+		background-color: #fbfaf6;
+		box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+		transition: transform 0.3s ease-in-out;
+		margin: 0 20px;
+		&:hover {
+			transform: scale(1.1);
+		}
+		&:nth-child(n+5) {
+			margin-top: 25px;
+		}
+	}
+	&__img {
+		cursor: pointer;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 220px;
+	}
+	&__subscribe {
+		font-family: "Roboto Slab";
+		font-size: 15px;
+		text-transform: uppercase;
+	}
+}

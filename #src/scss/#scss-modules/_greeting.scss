@@ -1,0 +1,50 @@
+.greeting {
+	padding: 50px 0;
+	background-color: $main-color;
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	&__title {
+		color: #f6edd8;
+		font-family: "SEASRN__";
+		font-size: 60px;
+		text-transform: uppercase;
+		animation: scale 2s infinite;
+	}
+	&__logo {
+		width: 500px;
+		position: relative;
+	}
+	&__span {
+		color: #4b4e4c;
+		position: absolute;
+		top: 10px;
+		left: 50%;
+		transform: translateX(-50%);
+		font-family: "Bazar";
+	}
+	&__hello {
+		color: #f7ebd8;
+		font-family: "Bazar";
+		text-transform: uppercase;
+		text-align: center;
+		margin-top: 20px;
+	}
+	&__hello-span {
+		font-size: 30px;
+	}
+}
+
+@keyframes scale {
+	0% {
+		transform: scale(0.7);
+	}
+	50% {
+		transform: scale(1);
+	}
+	100% {
+		transform: scale(0.7);
+	}
+}

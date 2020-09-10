@@ -33,12 +33,25 @@
 		display: flex;
 		justify-content: space-around;
 		margin-top: 50px;
+		overflow: hidden;
+	}
+	&__active {
+		&:first-child {
+			transform: translateX(-900px);
+		}
+		&:nth-child(2) {
+			transform: translateY(900px);
+		}
+		&:last-child {
+			transform: translateX(900px);
+		}
 	}
 	&__block {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		flex: 0 1 360px;
+		transition: all 1s ease-in-out;
 	}
 	&__subAboutTitle {
 		font-size: 23px;

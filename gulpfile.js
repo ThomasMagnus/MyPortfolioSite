@@ -1,4 +1,6 @@
-const project_folder = 'dist',
+'../программы/open_server_5_3_5_basic_premium_ultimate/ospanel/domains/'
+
+const project_folder = 'dist';
 	  source_folder = '#src',
 	  fs = require('fs');
 

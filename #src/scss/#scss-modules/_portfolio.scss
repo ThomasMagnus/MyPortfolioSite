@@ -12,17 +12,40 @@
 		justify-content: center;
 		flex-wrap: wrap;
 		width: 1200px;
+		overflow: hidden;
 	}
 	&__work {
 		background-color: #fbfaf6;
 		box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
-		transition: transform 0.3s ease-in-out;
+		transition: transform 1.5s ease-in-out;
 		margin: 0 20px;
 		&:hover {
 			transform: scale(1.1);
 		}
 		&:nth-child(n+5) {
 			margin-top: 25px;
+		}
+	}
+	&__active {
+		&:nth-child(-n+2) {
+			transform: translateX(-900px);
+			opacity: 0;
+		}
+		&:nth-child(-n+2) {
+			transform: translateX(-900px);
+			opacity: 0;
+		}
+		&:nth-child(3) {
+			transform: translateX(900px);
+			opacity: 0;
+		}
+		&:nth-child(4) {
+			transform: translateX(900px);
+			opacity: 0;
+		}
+		&:last-child {
+			transform: translateY(900px);
+			opacity: 0;
 		}
 	}
 	&__img {

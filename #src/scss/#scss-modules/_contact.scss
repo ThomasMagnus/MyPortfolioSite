@@ -81,4 +81,15 @@
 	&__me-img {
 		width: 64px;
 	}
+	&__input {
+		display: flex;
+		align-items: center;
+		position: relative;
+	}
+	&__spinner {
+		position: absolute;
+		width: 30px;
+		right: -50px;
+		display: none;
+	}
 }

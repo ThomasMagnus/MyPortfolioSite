@@ -20,14 +20,10 @@ testWebP(function (support) {
 window.addEventListener('DOMContentLoaded', () => {
 	'use strict'
 
-	const hint = document.querySelector('#hint'),
-		  skillsHint = document.querySelector('.skills__hint');
-
-	hint.addEventListener('mouseenter', () => {
-		skillsHint.style.opacity = '1'
-	})
-
-	hint.addEventListener('mouseleave', () => {
-		skillsHint.style.opacity = '0'
-	})
+	@@include('modules/hint.js');
+	@@include('modules/scroll.js');
+	@@include('modules/fade.js');
+	@@include('modules/skills.js');
+	@@include('modules/mask.js');
+	@@include('modules/form.js');
 })
